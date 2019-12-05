@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Calculator using HTML, CSS and Js
+	</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="cal.js"></script>
+</head>
+
+<body>
+	<div id="firework">
+		<img src="fireworkds.gif">
+	</div>
+
+	<div id="dialog">
+		<img src="dialog.gif">
+	</div>
+	<div id="santa">
+		<img src="santawithgift.gif">
+	</div>
+
+	<div id="hurrah">
+		<img src="hurrah.png">
+	</div>
+
+	<div id="content">
+		<form name="calc">
+			<table id="calc">
+				<tr>
+					<td colspan=4><input id="display" name="display" onkeypress="return event.charCode >= 48 
+					&& event.charCode <= 57" type="text" autofocus="autofocus">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="btn" type="button" value="C" OnClick="clearScreen(); hideAnimation();">
+					</td>
+					<td><input class="btn" type="button" value="&#x232b;" OnClick="backspace(this.form)">
+					</td>
+					<td><input class="btn" id="clr" type="button" value="&#247" OnClick="addSymbol('/')">
+					</td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="7" OnClick="addSymbol('7')">
+					</td>
+
+					<td><input class="btn" type="button" value="8" OnClick="addSymbol('8')">
+					</td>
+
+					<td><input class="btn" type="button" value="9" OnClick="addSymbol('9')">
+					</td>
+
+					<td><input class="btn" id="clr" type="button" value="&#215" OnClick="addSymbol('*')">
+					</td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="4" OnClick="addSymbol('4')">
+					</td>
+
+					<td><input class="btn" type="button" value="5" OnClick="addSymbol('5')">
+					</td>
+
+					<td><input class="btn" type="button" value="6" OnClick="addSymbol('6')">
+					</td>
+
+					<td><input class="btn" id="clr" type="button" value="-" OnClick="addSymbol('-')">
+					</td>
+				</tr>
+				<tr>
+					<td><input class="btn" type="button" value="1" OnClick="addSymbol('1')">
+					</td>
+
+					<td><input class="btn" type="button" value="2" OnClick="addSymbol('2')">
+					</td>
+
+					<td><input class="btn" type="button" value="3" OnClick="addSymbol('3')">
+					</td>
+					<td><input class="btn" id="clr" type="button" value="&#43" OnClick="addSymbol('+')">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input class="btn" class="zero" type="button" value="0"
+							OnClick="addSymbol('0')">
+					</td>
+					<td><input class="btn" id="clrEqual" type="button" value="=" OnClick="showAnimatons(); addSymbol('=')">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
